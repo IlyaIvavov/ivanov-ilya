@@ -106,16 +106,18 @@ a {
 /* Main Page */
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background: rgb(207, 207, 207);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
+    background-size: cover;
 }
+
 
 /* nav */
 
 .nav-wrapper {
     display: flex;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .nav-list {
@@ -137,21 +139,11 @@ header {
 
 /* offer */
 
-.offer {
-    display: flex;
-    max-width: 1270px;
-}
-
-.title-span {
-    font-weight: 250;
-    font-size: 50px;
-    line-height: 57px;
-}
-
-.title-span_name {
-    font-weight: 800;
-    font-size: 87px;
-    line-height: 107px;
+.bu {
+    writing-mode: vertical-rl;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 80px;
 }
 
 /* Second Page */
