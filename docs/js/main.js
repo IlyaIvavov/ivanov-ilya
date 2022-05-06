@@ -1,10 +1,26 @@
-var swiper = new Swiper('.swiper', {
-	direction: 'vertical',
-	slidesPerView: 1,
-	spaceBetween: 30,
-	mousewheel: true,
-	pagination: {
-	  el: '.swiper-pagination',
-	  clickable: true,
-	},
-  });
+$(document).ready(function () {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 200,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+	});
+});
