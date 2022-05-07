@@ -149,7 +149,7 @@ header {
 
 .nav-list__item a {
     font-weight: 400;
-    font-size: calc(15px + 5 * (100vw / 1920));
+    font-size: calc(13px + 2 * (100vw / 1920));
     line-height: 23px;
     margin-right: 30px;
     transition: all 0.3s linear;
