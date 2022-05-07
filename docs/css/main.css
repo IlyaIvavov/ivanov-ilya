@@ -76,7 +76,21 @@ button:focus {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    border-radius: 100px;
+    border: 2px solid;
+    border-color: #FFFFFF26;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
     color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+button:hover {
+    transition: all 0.3s linear;
+    border-color: #FFFFFF40;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 ul, li {
@@ -139,26 +153,15 @@ a {
 }
 
 .main-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 302px;
     height: 43px;
     background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(50px);
-    border-radius: 100px;
 }
 
 .ghost-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 302px;
     height: 43px;
-    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(50px);
-    border-radius: 100px;
-    border: 2px;
+    background: transparent;
 }
 
 /* Main Page */
@@ -217,13 +220,15 @@ header {
 
 .offer__span {
     font-weight: 200;
-    font-size: calc(30px + 40 * (100vw / 1920));
-    line-height: calc(45px + 35 * (100vw / 1920));
+    font-size: calc(25px + 25 * (100vw / 1920));
+    line-height: calc(45px + 25 * (100vw / 1920));
     color: rgba(255, 255, 255, 0.5);
 }
 
 .offer__span_business {
     writing-mode: vertical-rl;
+    font-size: calc(30px + 40 * (100vw / 1920));
+    line-height: calc(45px + 35 * (100vw / 1920));
     padding-top: 0.5%;
 }
 
