@@ -67,32 +67,6 @@ body {
 	font-family: 'Gilroy';
 }
 
-button,
-button:hover,
-button:focus {
-	font-family: inherit;
-	outline: none;
-	border: none;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    border-radius: 100px;
-    border: 2px solid;
-    border-color: #FFFFFF26;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: rgba(255, 255, 255, 0.5);
-    transition: all 0.3s linear;
-}
-
-button:hover {
-    transition: all 0.3s linear;
-    border-color: #FFFFFF40;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
 ul, li {
 	display: block;
 	padding: 0;
@@ -143,6 +117,37 @@ a {
 	margin: 0 auto;
 }
 
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+    border-radius: 100px;
+    border: 2px solid;
+    border-color: #FFFFFF26;
+}
+
+button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+    width: 302px;
+    height: 44px;
+}
+
+button:hover {
+    transition: all 0.3s linear;
+    border-color: #FFFFFF40;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
 .btn-wrapper {
     display: flex;
     align-items: center;
@@ -153,14 +158,10 @@ a {
 }
 
 .main-btn {
-    width: 302px;
-    height: 43px;
     background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .ghost-btn {
-    width: 302px;
-    height: 43px;
     background: transparent;
 }
 
@@ -190,17 +191,22 @@ header {
     font-weight: 400;
     font-size: calc(13px + 2 * (100vw / 1920));
     line-height: calc(13px + 4 * (100vw / 1920));
+    color: rgba(255, 255, 255, 0.5);
     margin-right: 30px;
     transition: all 0.3s linear;
 }
 
 .nav-list__item a:hover {
-    color: #89FF96;
+    color: rgba(255, 255, 255, 1);
     transition: all 0.3s linear;
 }
 
 .media-list__item {
     margin-right: 30px;
+}
+
+.media-list__item span {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* offer */
@@ -214,6 +220,9 @@ header {
 }
 
 .offer {
+    position: relative;
+    top: 0;
+    left: -18px;
     display: flex;
     margin-bottom: 19px;
 }
@@ -227,7 +236,7 @@ header {
 
 .offer__span_business {
     writing-mode: vertical-rl;
-    font-size: calc(30px + 40 * (100vw / 1920));
+    font-size: calc(30px + 44 * (100vw / 1920));
     line-height: calc(45px + 35 * (100vw / 1920));
     padding-top: 0.5%;
 }
@@ -257,12 +266,12 @@ header {
 
 .description__item {
     font-weight: 200;
-    font-size: calc(15px + 2 * (100vw / 1920));
-    font-size: calc(17px + 2 * (100vw / 1920));
+    font-size: calc(14px + 2 * (100vw / 1920));
+    font-size: calc(16px + 2 * (100vw / 1920));
 }
 
 .description__item:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 /* Second Page */
