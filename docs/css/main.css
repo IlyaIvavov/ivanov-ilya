@@ -91,8 +91,8 @@ h1, h2 {
 
 p {
 	font-weight: 200;
-	font-size: 22px;
-	line-height: 33px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 a {
@@ -150,7 +150,7 @@ header {
 .nav-list__item a {
     font-weight: 400;
     font-size: calc(13px + 2 * (100vw / 1920));
-    line-height: 23px;
+    line-height: calc(13px + 4 * (100vw / 1920));
     margin-right: 30px;
     transition: all 0.3s linear;
 }
@@ -170,6 +170,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .offer {
@@ -194,5 +195,29 @@ header {
     line-height: calc(60px + 47 * (100vw / 1920));
     color: #fff;
 }
+
+.description-wrapper {
+    width: 884px;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 2px;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 16px;
+}
+
+.description__item {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.description__item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
 
 /* Second Page */
