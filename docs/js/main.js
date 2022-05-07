@@ -10,12 +10,6 @@ $(document).ready(function () {
         loopBottom: false,
         loopTop: false,
         css3: true,
-        navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
-        },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
