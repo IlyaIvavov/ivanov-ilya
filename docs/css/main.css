@@ -97,6 +97,26 @@ a {
 	text-decoration: none;
 }
 
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
 .container {
 	width: 90vw;
 	height: 100%;
@@ -106,19 +126,15 @@ a {
 /* Main Page */
 
 header {
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
     background-size: cover;
-    filter: blur(15px);
 }
-
 
 /* nav */
 
 .nav-wrapper {
     display: flex;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .nav-list {
@@ -148,23 +164,3 @@ header {
 }
 
 /* Second Page */
-
-.section {
-    width: 100%;
-    height: 100vh;
-}
-
-.bg {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-
-.blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px);
-}
