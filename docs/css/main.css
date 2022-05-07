@@ -85,6 +85,8 @@ h1, h2 {
 	font-weight: 800;
 	font-size: 70px;
 	line-height: 85px;
+    padding: 0;
+	margin: 0;
 }
 
 p {
@@ -114,7 +116,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .container {
@@ -146,8 +148,14 @@ header {
     display: flex;
 }
 
-.nav-list__item {
+.nav-list__item a {
     margin-right: 30px;
+    transition: all 0.3s linear;
+}
+
+.nav-list__item a:hover {
+    color: #89FF96;
+    transition: all 0.3s linear;
 }
 
 .media-list__item {
@@ -156,11 +164,32 @@ header {
 
 /* offer */
 
-.bu {
-    writing-mode: vertical-rl;
+.offer-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.offer {
+    display: flex;
+}
+
+.offer__span {
     font-weight: 200;
     font-size: 70px;
     line-height: 80px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.offer__span_business {
+    writing-mode: vertical-rl;
+}
+
+.offer__span_name {
+    font-weight: 800;
+    font-size: 87px;
+    line-height: 107px;
+    color: #fff;
 }
 
 /* Second Page */
