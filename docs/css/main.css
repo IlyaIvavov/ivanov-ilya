@@ -209,6 +209,16 @@ header {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.media-list__item a {
+    opacity: 50%;
+    transition: all 0.3s linear;
+}
+
+.media-list__item a:hover {
+    opacity: 100%;
+    transition: all 0.3s linear;
+}
+
 /* offer */
 
 .offer-wrapper {
