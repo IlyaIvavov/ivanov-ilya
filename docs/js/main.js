@@ -1,22 +1,37 @@
+const pageSlider = new Swiper('.page', {
+	wrapperClass: '.page__wrapper',
+	sliderClass: '.page__screen',
+	direction: 'vertical',
+	slidesPerView: 'auto',
+	parallax: true,
 
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
 
-// $(document).ready(function () {
-// 	$('#pagepiling').pagepiling({
-// 	    menu: null,
-//         direction: 'vertical',
-//         verticalCentered: true,
-//         sectionsColor: [],
-//         anchors: [],
-//         scrollingSpeed: 200,
-//         easing: 'swing',
-//         loopBottom: false,
-//         loopTop: false,
-//         css3: true,
-//        	normalScrollElements: null,
-//         normalScrollElementTouchThreshold: 5,
-//         touchSensitivity: 5,
-//         keyboardScrolling: true,
-//         sectionSelector: '.section',
-//         animateAnchor: false,
-// 	});
-// });
+	mousewheel: {
+		sensitivity: 1,
+	},
+
+	watchOverflow: true,
+	speed: 400,
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
+
+	pagination: {
+		el: '.page__pagination',
+		type: 'bullets',
+		clickable: true,
+		bulletClass: '.page__bullet',
+		bulletActiveClass: '.page__bullet_active',
+	},
+
+	scrollbar: {
+		el: '.page__scroll',
+		dragClass: '.page_drag-scroll',
+		draggable: true,
+	},
+});

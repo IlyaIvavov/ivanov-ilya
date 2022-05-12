@@ -58,9 +58,11 @@
     font-display: swap;
 }
 
-* {
+*, *::before, *::after  {
 	box-sizing: border-box;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -68,18 +70,15 @@ body {
     height: 100%;
 }
 
-ul, li {
+ul, li, ol {
 	display: block;
-	padding: 0;
-	margin: 0;
+    list-style: none;
 }
 
 h1, h2 {
 	font-weight: 800;
 	font-size: calc(30px + 40 * (100vw / 1920));
     line-height: calc(45px + 35 * (100vw / 1920));
-    padding: 0;
-	margin: 0;
 }
 
 p {
@@ -92,24 +91,13 @@ a {
 	text-decoration: none;
 }
 
+img {
+    vertical-align: top;
+}
+
 .section {
     width: 100vw;
     height: 100vh;
-}
-
-.bg {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-
-.blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
 }
 
 .container {
@@ -166,13 +154,137 @@ button:hover {
     background: transparent;
 }
 
+/* Main Swipper */
+
+.wrapper {
+    min-height: 100%;
+}
+
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.page___screen {
+
+}
+
+.page__pagination {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(0px, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.page__bullet {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: #000;
+    margin: 10px 0;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.page__bullet_active {
+    background: #fff;
+}
+
+.page__scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+} 
+
+.page__drag-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+}
+
+.screen {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.screen__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.screen__body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.screen__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.screen__img img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.screen__blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.screen__color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
 /* Main Page */
 
 /* nav */
 
 .nav-wrapper {
     display: flex;
-    margin-top: 40px;
 }
 
 .nav-list {
@@ -281,66 +393,3 @@ button:hover {
 }
 
 /* Second Page */
-
-/* Main Swipper */
-
-.wrapper {
-    min-height: 100%;
-}
-
-.page {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-
-.page__wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-.page___screen {
-
-}
-
-.screen {
-    flex: 1 0 100%;
-    position: relative;
-}
-
-.screen__content {
-    position: relative;
-    z-index: 2;
-}
-
-.screen__body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-
-.screen__img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-}
-
-.screen__img img {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
