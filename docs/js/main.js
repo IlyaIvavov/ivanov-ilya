@@ -1,20 +1,22 @@
-$(document).ready(function () {
-	$('#pagepiling').pagepiling({
-	    menu: null,
-        direction: 'vertical',
-        verticalCentered: true,
-        sectionsColor: [],
-        anchors: [],
-        scrollingSpeed: 200,
-        easing: 'swing',
-        loopBottom: false,
-        loopTop: false,
-        css3: true,
-       	normalScrollElements: null,
-        normalScrollElementTouchThreshold: 5,
-        touchSensitivity: 5,
-        keyboardScrolling: true,
-        sectionSelector: '.section',
-        animateAnchor: false,
-	});
-});
+
+
+// $(document).ready(function () {
+// 	$('#pagepiling').pagepiling({
+// 	    menu: null,
+//         direction: 'vertical',
+//         verticalCentered: true,
+//         sectionsColor: [],
+//         anchors: [],
+//         scrollingSpeed: 200,
+//         easing: 'swing',
+//         loopBottom: false,
+//         loopTop: false,
+//         css3: true,
+//        	normalScrollElements: null,
+//         normalScrollElementTouchThreshold: 5,
+//         touchSensitivity: 5,
+//         keyboardScrolling: true,
+//         sectionSelector: '.section',
+//         animateAnchor: false,
+// 	});
+// });

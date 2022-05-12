@@ -65,6 +65,7 @@
 
 body {
 	font-family: 'Gilroy';
+    height: 100%;
 }
 
 ul, li {
@@ -166,11 +167,6 @@ button:hover {
 }
 
 /* Main Page */
-
-header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/main-bg.gif) no-repeat center center;
-    background-size: cover;
-}
 
 /* nav */
 
@@ -285,3 +281,66 @@ header {
 }
 
 /* Second Page */
+
+/* Main Swipper */
+
+.wrapper {
+    min-height: 100%;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.page___screen {
+
+}
+
+.screen {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.screen__content {
+    position: relative;
+    z-index: 2;
+}
+
+.screen__body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.screen__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.screen__img img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
