@@ -264,9 +264,19 @@ button:hover {
     left: 0;
 }
 
-#mountain2 {
+#img-s2 {
     object-fit: cover;
     object-position: top;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#img-s4 {
+    object-fit: cover;
+    object-position: 20% 70%;
     position: absolute;
     width: 100%;
     height: 100%;
