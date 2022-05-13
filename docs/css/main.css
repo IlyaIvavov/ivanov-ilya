@@ -73,6 +73,9 @@ body {
 ul, li, ol {
 	display: block;
     list-style: none;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 h1, h2 {
@@ -106,6 +109,13 @@ img {
 	margin: 0 auto;
 }
 
+.line {
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    margin-right: 16px;
+}
+
 button,
 button:hover,
 button:focus {
@@ -131,7 +141,6 @@ button:hover {
     transition: all 0.3s linear;
     border-color: #FFFFFF40;
     color: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
 }
 
 .btn-wrapper {
@@ -454,17 +463,10 @@ button:hover {
     margin-bottom: 43px;
 }
 
-.line {
-    width: 2px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    margin-right: 16px;
-}
-
 .description__item {
     font-weight: 200;
-    font-size: calc(14px + 2 * (100vw / 1920));
-    font-size: calc(16px + 2 * (100vw / 1920));
+    font-size: calc(14px + 2 * (100vw / 1920)) !important;    
+    line-height: calc(16px + 2 * (100vw / 1920)) !important;
 }
 
 .description__item:not(:last-child) {
@@ -481,3 +483,45 @@ button:hover {
     top: 0;
     left: 0;
 }
+
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.content__span {
+    font-weight: 200;
+    font-size: calc(25px + 25 * (100vw / 1920));
+    line-height: calc(45px + 25 * (100vw / 1920));
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.desc-wrapper {
+    max-width: 763px;
+    display: flex;
+}
+
+.desc__line {
+    width: 5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    margin-right: 16px;
+}
+
+.desc__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+/* Custom Cursor */
+

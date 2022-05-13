@@ -79,3 +79,5 @@ function menuSliderRemove() {
 pageSlider.init();
 
 // Animate
+
+// Custom Cursor
