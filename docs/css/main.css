@@ -161,32 +161,20 @@ button:hover {
     background: transparent;
 }
 
-.light-btn {
+.strong {
     font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
-    background: none;
-    width: auto;
-    height: auto;
-    border: none;
-    transition: all 0.3s linear;
-}
-
-.light-btn:hover {
-    color: rgba(255, 255, 255, 0.9);
-    border: none;
-    transition: all 0.3s linear;
-}
-
-.light-btn:focus {
-    border: none;
-    transition: all 0.3s linear;
 }
 
 /* Main Swiper */
 
 .wrapper {
     min-height: 100%;
+}
+
+.wrapper._free .page__pagination {
+    transition: all 0.3s linear;
+    transform: translate(50px, -50%);
+    opacity: 0;
 }
 
 .page {
@@ -398,46 +386,6 @@ button:hover {
     opacity: 100%;
 }
 
-/* .nav-list {
-    display: flex;
-}
-
-.media-list {
-    display: flex;
-}
-
-.nav-list__item a {
-    font-weight: 400;
-    font-size: calc(13px + 2 * (100vw / 1920));
-    line-height: calc(13px + 4 * (100vw / 1920));
-    color: rgba(255, 255, 255, 0.5);
-    margin-right: 30px;
-    transition: all 0.3s linear;
-}
-
-.nav-list__item a:hover {
-    color: rgba(255, 255, 255, 1);
-    transition: all 0.3s linear;
-}
-
-.media-list__item {
-    margin-right: 30px;
-}
-
-.media-list__item span {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.media-list__item a {
-    opacity: 50%;
-    transition: all 0.3s linear;
-}
-
-.media-list__item a:hover {
-    opacity: 100%;
-    transition: all 0.3s linear;
-} */
-
 /* Offer */
 
 .content-wrapper {
@@ -508,7 +456,7 @@ button:hover {
 }
 
 .description_about {
-    width: 763px;
+    width: 773px;
 }
 
 .description_about li:not(:last-child) {
@@ -525,7 +473,6 @@ button:hover {
 }
 
 /* My Project */
-
 
 
 /* Custom Cursor */

@@ -1,5 +1,4 @@
 // Swiper
-
 let pageSlider = new Swiper('.page', {
 	wrapperClass: "page__wrapper",
 	slideClass: "page__screen",
@@ -46,7 +45,7 @@ let pageSlider = new Swiper('.page', {
 		slideChange: function () {
 			menuSliderRemove();
 			menuLinks[pageSlider.realIndex].classList.add('_active');
-		},
+		}
 	},
 });
 
