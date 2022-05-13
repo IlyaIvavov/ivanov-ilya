@@ -121,13 +121,10 @@ button {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
     color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s linear;
     width: 302px;
-    height: 44px;
+    height: 40px;
 }
 
 button:hover {
@@ -154,7 +151,7 @@ button:hover {
     background: transparent;
 }
 
-/* Main Swipper */
+/* Main Swiper */
 
 .wrapper {
     min-height: 100%;
@@ -176,7 +173,7 @@ button:hover {
     height: 100%;
 }
 
-.page___screen {
+.page__screen {
 
 }
 
@@ -187,29 +184,35 @@ button:hover {
     transform: translate(0px, -50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .page__bullet {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     cursor: pointer;
-    background: #000;
-    margin: 10px 0;
+    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(50px);
+    margin: 7px 0;
     border-radius: 50%;
     transition: all 0.3s linear;
 }
 
 .page__bullet_active {
-    background: #fff;
+    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(50px);
+    width: 13px;
+    height: 13px;
 }
 
 .page__scroll {
     position: absolute;
     top: 0;
     right: 0;
-    width: 4px;
+    width: 5px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(50px);
 } 
 
 .page__drag-scroll {
@@ -217,7 +220,9 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -259,6 +264,16 @@ button:hover {
     left: 0;
 }
 
+#mountain2 {
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .screen__blur {
     position: absolute;
     width: 100%;
@@ -281,13 +296,67 @@ button:hover {
 
 /* Main Page */
 
-/* nav */
-
-.nav-wrapper {
-    display: flex;
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 40px;
 }
 
-.nav-list {
+/* nav */
+
+.header__menu {
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    font-weight: 400;
+    font-size: calc(13px + 2 * (100vw / 1920));
+    line-height: calc(13px + 4 * (100vw / 1920));
+    opacity: 60%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 30px;
+    transition: all 0.3s linear;
+}
+
+.menu__link._active {
+    color: #fff;
+}
+
+.menu__link:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s linear;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.media span {
+    opacity: 60%;
+}
+
+.media a {
+    display: flex;
+    align-items: center;
+    opacity: 60%;
+    transition: all 0.3s linear;
+    margin-left: 30px;
+}
+
+.media a:hover {
+    opacity: 100%;
+}
+
+/* .nav-list {
     display: flex;
 }
 
@@ -325,7 +394,7 @@ button:hover {
 .media-list__item a:hover {
     opacity: 100%;
     transition: all 0.3s linear;
-}
+} */
 
 /* offer */
 
@@ -378,7 +447,7 @@ button:hover {
 .line {
     width: 2px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     margin-right: 16px;
 }
 
@@ -393,3 +462,12 @@ button:hover {
 }
 
 /* Second Page */
+
+.screen__img img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
