@@ -79,15 +79,15 @@ ul, li, ol {
 }
 
 h1, h2 {
-	font-weight: 800;
-	font-size: calc(30px + 40 * (100vw / 1920));
-    line-height: calc(45px + 35 * (100vw / 1920));
+	font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
 }
 
 p {
 	font-weight: 200;
-    font-size: calc(15px + 2 * (100vw / 1920));
-    font-size: calc(17px + 2 * (100vw / 1920));
+    font-size: 20px;
+    line-height: 28px;
 }
 
 a {
@@ -125,6 +125,7 @@ button:focus {
     border-radius: 100px;
     border: 2px solid;
     border-color: #FFFFFF26;
+    cursor: pointer;
 }
 
 button {
@@ -134,7 +135,7 @@ button {
     color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s linear;
     width: 302px;
-    height: 40px;
+    height: 43px;
 }
 
 button:hover {
@@ -158,6 +159,28 @@ button:hover {
 
 .ghost-btn {
     background: transparent;
+}
+
+.light-btn {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    background: none;
+    width: auto;
+    height: auto;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.light-btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.light-btn:focus {
+    border: none;
+    transition: all 0.3s linear;
 }
 
 /* Main Swiper */
@@ -337,8 +360,8 @@ button:hover {
 
 .menu__link {
     font-weight: 400;
-    font-size: calc(13px + 2 * (100vw / 1920));
-    line-height: calc(13px + 4 * (100vw / 1920));
+    font-size: 20px;
+    line-height: 23px;
     opacity: 60%;
     color: rgba(255, 255, 255, 0.5);
     margin-right: 30px;
@@ -415,9 +438,9 @@ button:hover {
     transition: all 0.3s linear;
 } */
 
-/* offer */
+/* Offer */
 
-.offer-wrapper {
+.content-wrapper {
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -425,39 +448,39 @@ button:hover {
     justify-content: center;
 }
 
-.offer {
+.content_offer {
     position: relative;
     top: 0;
     left: -18px;
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 19px !important;
 }
 
-.offer__span {
+.content__span {
     font-weight: 200;
-    font-size: calc(25px + 25 * (100vw / 1920));
-    line-height: calc(45px + 25 * (100vw / 1920));
+    font-size: 50px;
+    line-height: 57px;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.offer__span_business {
+.content__span_business {
     writing-mode: vertical-rl;
-    font-size: calc(30px + 44 * (100vw / 1920));
-    line-height: calc(45px + 35 * (100vw / 1920));
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 80px;
     padding-top: 0.5%;
 }
 
-.offer__span_name {
+.content__span_name {
     font-weight: 800;
-    font-size: calc(37px + 50 * (100vw / 1920));
-    line-height: calc(60px + 47 * (100vw / 1920));
+    font-size: 87px;
+    line-height: 107px;
     color: #fff;
 }
 
 /* description */
 
-.description-wrapper {
-    max-width: 884px;
+.description-wrapper_offer {
     display: flex;
     align-items: center;
     margin-bottom: 43px;
@@ -465,15 +488,32 @@ button:hover {
 
 .description__item {
     font-weight: 200;
-    font-size: calc(14px + 2 * (100vw / 1920)) !important;    
-    line-height: calc(16px + 2 * (100vw / 1920)) !important;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .description__item:not(:last-child) {
     margin-bottom: 8px;
 }
 
-/* Second Page */
+/* About */
+
+.content {
+    margin-bottom: 24px;
+}
+
+.description-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.description_about {
+    width: 763px;
+}
+
+.description_about li:not(:last-child) {
+    margin-bottom: 13px;
+}
 
 .screen__img img {
     object-fit: cover;
@@ -484,44 +524,9 @@ button:hover {
     left: 0;
 }
 
-.content-wrapper {
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-}
+/* My Project */
 
-.content {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    margin-bottom: 19px;
-}
 
-.content__span {
-    font-weight: 200;
-    font-size: calc(25px + 25 * (100vw / 1920));
-    line-height: calc(45px + 25 * (100vw / 1920));
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.desc-wrapper {
-    max-width: 763px;
-    display: flex;
-}
-
-.desc__line {
-    width: 5px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    margin-right: 16px;
-}
-
-.desc__item:not(:last-child) {
-    margin-bottom: 8px;
-}
 
 /* Custom Cursor */
 
