@@ -555,28 +555,57 @@ button:hover {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* Programm */
+/* Program */
 
 .swiper {
     width: 1085px;
     height: auto;
     margin-left: 0% !important;
-    padding-bottom: 33px !important;
+    padding-bottom: 23px !important;
+    margin-bottom: 33px;
 }
 
 .swiper-scrollbar {
     background: rgba(255, 255, 255, 0.1) !important;
     border-radius: 3px !important;
+    height: 4px !important;
 }
 
 .swiper-scrollbar-drag {
     background: rgba(255, 255, 255, 0.3) !important;
     border-radius: 2px !important;
+    height: 4px !important;
 }
 
 .swiper-horizontal>.swiper-scrollbar {
     left: 0% !important;
     width: 100% !important;   
+}
+
+.program-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.program-details-wrpaper {
+    display: flex;
+    align-items: center;
+}
+
+.program-details-wrpaper:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.program-detail {
+    display: flex;
+}
+
+.program-detail__item {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-right: 23px;
 }
 
 /* Contact */
