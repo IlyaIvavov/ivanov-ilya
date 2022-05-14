@@ -555,5 +555,45 @@ button:hover {
     color: rgba(255, 255, 255, 0.4);
 }
 
+/* Programm */
+
+.swiper {
+    width: 1085px;
+    height: auto;
+    margin-left: 0% !important;
+    padding-bottom: 33px !important;
+}
+
+.swiper-scrollbar {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 3px !important;
+}
+
+.swiper-scrollbar-drag {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 2px !important;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+    left: 0% !important;
+    width: 100% !important;   
+}
+
+/* Contact */
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 781px;
+}
+
+.media_contact {
+    margin-bottom: 13px;
+}
+
+.media_contact a:not(:last-child) {
+    margin-left: 0;
+}
+
 /* Custom Cursor */
 

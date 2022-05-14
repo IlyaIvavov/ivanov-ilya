@@ -49,6 +49,13 @@ let pageSlider = new Swiper('.page', {
 	},
 });
 
+let Slider2 = new Swiper('.swiper', {
+	scrollbar: {
+		el: '.swiper-scrollbar',
+		draggable: true,
+	},
+});
+	
 // Nav Menu
 
 let menuLinks = document.querySelectorAll('.menu__link');
