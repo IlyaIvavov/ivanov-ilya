@@ -474,6 +474,86 @@ button:hover {
 
 /* My Project */
 
+.project-wrapper {
+    display: flex;
+}
+
+.project-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 33px;
+}
+
+.project-name-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 33px;
+}
+
+.project-name__name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 3px;
+}
+
+.span-project-name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.project-name__desk {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 3px;
+}
+
+.project-name__link,
+.project-name__link:hover,
+.project-name__link:focus {
+    border-radius: none;
+    border: none;
+    background: none;
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s linear;
+}
+
+.project-name__link:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s linear;
+}
+
+.project-stats-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.project-stats__item {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.project-stats__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.span-project-stats {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.4);
+}
 
 /* Custom Cursor */
 
