@@ -54,6 +54,7 @@ let Slider2 = new Swiper('.swiper', {
 		el: '.swiper-scrollbar',
 		draggable: true,
 	},
+	grabCursor: true,
 });
 	
 // Nav Menu
