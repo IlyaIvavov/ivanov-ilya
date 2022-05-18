@@ -200,7 +200,7 @@ button:hover {
 .page__pagination {
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 50px !important;
     transform: translate(0px, -50%);
     display: flex;
     flex-direction: column;
@@ -548,11 +548,126 @@ button:hover {
     margin-bottom: 8px;
 }
 
+.project-stats__item_theme {
+    font-weight: 300;
+}
+
 .span-project-stats {
     font-weight: 200;
     font-size: 18px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.4);
+}
+
+/* Learning */
+
+.learning-wrapper {
+    display: flex;
+    margin-top: 33px;
+}
+
+.learning {
+    max-width: 810px;
+    margin-right: 33px;
+}
+
+.learning__item {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 13px 20px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+
+.learning__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s linear;
+}
+
+.learning__item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s linear;
+}
+
+.learning__item.active {
+    cursor: default;
+    color: rgba(255, 255, 255, 1);
+}
+
+.learning__item.active::after{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.learning__item.active::before  {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.learning__item:hover {
+    transition: color 0.3s linear;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.learning__item:hover::after {
+    transition: all 0.3s linear;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.learning__item:hover::before {
+    transition: all 0.3s linear;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.learning-tooltip-item {
+    display: none;
+}
+
+.learning-tooltip-item.active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 16px;
+    max-width: 700px;
+}
+
+.learning-tooltip-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    width: 2px;
+    height: 100%;
+}
+
+.learning-tooltip-item__heading {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 3px;
+}
+
+.learning-tooltip-item__desk {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 /* Program */
