@@ -1,4 +1,5 @@
 // Swiper
+
 let pageSlider = new Swiper('.page', {
 	wrapperClass: "page__wrapper",
 	slideClass: "page__screen",
@@ -84,6 +85,30 @@ function menuSliderRemove() {
 }
 
 pageSlider.init();
+
+// Learning Tabs
+
+$('.learning__item').click(function() {
+	let currTab = $(this).index();
+
+	$('.learning__item').removeClass('active');
+	$(this).addClass('active');
+
+	$('.learning-tooltip-item').removeClass('active');
+	$('.learning-tooltip-item').eq(currTab).addClass('active');
+})
+
+// Bonuses Tabs
+
+$('.bonuses__item').click(function() {
+	let currTab = $(this).index();
+
+	$('.bonuses__item').removeClass('active');
+	$(this).addClass('active');
+
+	$('.bonuses-tooltip-item').removeClass('active');
+	$('.bonuses-tooltip-item').eq(currTab).addClass('active');
+})
 
 // Animate
 
